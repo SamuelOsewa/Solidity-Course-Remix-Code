@@ -14,6 +14,7 @@ contract UnpaidCoinSale {
 
     //Users have to send money to the contract
     function fund() public payable {
+        require(msg.value > 0, "Not enough Eth Sent");
         buyers.push(msg.sender);
         ethAmount = msg.value;
         buyersToUCAmount[msg.sender] = conversionRate(ethAmount);
@@ -26,10 +27,11 @@ contract UnpaidCoinSale {
     // 100 1,000,000,000,000,000,000
     // 249,898 1,000,000,000,000,000,000
 
-    //The contract has to keep track of all the moneey and users sent to the contract
+    //The contract has to keep track of all the money and users sent to the contract
 
     //Users have to get a certain amount of token for the money spent
     function tokenDisbursal() internal {
+        require(totalSupply >= conversionRate(ethAmount), "Token Exhausted");
          totalSupply = totalSupply - conversionRate(ethAmount);
     }
 
@@ -40,5 +42,13 @@ contract UnpaidCoinSale {
         uint256 amountInUc = (amountFunded * 100e18) / 1e18;
         return amountInUc;
     }
+
+    receive() external payable {
+        fund();
+     }
+
+    fallback() external payable {
+        fund();
+     }
 
 }

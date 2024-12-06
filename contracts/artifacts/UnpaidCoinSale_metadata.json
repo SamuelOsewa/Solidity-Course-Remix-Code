@@ -6,6 +6,10 @@
 	"output": {
 		"abi": [
 			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -62,6 +66,10 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -92,11 +100,11 @@
 	},
 	"sources": {
 		"contracts/TokenSale.sol": {
-			"keccak256": "0x246e09de472ac82cf336fde18d5d1bb2dd8880522437b6e18a837e370e6654f5",
+			"keccak256": "0xf16df0e5090db86ad850a5a2fe36b209169728146198d16ad0823d2fe0e36458",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d228d6673cc5d02f8ff84f7a0544e873b8ba9a5de3148ccffa1a8c7517da4e99",
-				"dweb:/ipfs/QmSjxvXJYsmZcNfevET9SgZy7pjF8G7db95MLLZvAB8RPP"
+				"bzz-raw://bcba3a6739901ad30ba103df70b7782bf98d7b73a197e2a0e655252068fed409",
+				"dweb:/ipfs/QmekNs7RDbBL2JvMUMMrpy2EMx8uQ9AUB1tchdmmhFqLWZ"
 			]
 		}
 	},
