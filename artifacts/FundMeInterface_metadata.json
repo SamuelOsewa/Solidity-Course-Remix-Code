@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FundMeinterface.sol": "FundMeInterface"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FundMeinterface.sol": {
+			"keccak256": "0x5c3ea3a7a6a922816c5e4c2ca5566d93355720b7ed04a52a4227854c683878af",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6f6c9a48723da4012996b984b699e0b7b30046ee14b75beb1b9450da42de3929",
+				"dweb:/ipfs/QmYWbRJcUaDyv9sCyXoNETdNES7CFeLKQZcC8y8oh3sqRJ"
+			]
+		}
+	},
+	"version": 1
+}
